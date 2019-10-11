@@ -28,5 +28,9 @@ public class Entry {
 //    private Translation trans_id;
 
 
+@ManyToOne
+@JoinColumn(name="translation_id")
+private Translation translation;
+
 
 }

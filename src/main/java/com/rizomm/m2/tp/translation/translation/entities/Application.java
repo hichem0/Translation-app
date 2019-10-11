@@ -25,7 +25,7 @@ public class Application {
     private String description;
 
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "application")
     private Collection<Translation> translations;
 
 

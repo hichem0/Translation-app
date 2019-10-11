@@ -5,8 +5,9 @@ package com.rizomm.m2.tp.translation.translation.services;
         import com.rizomm.m2.tp.translation.translation.services.imp.EntryService;
         import org.springframework.beans.factory.annotation.Autowired;
         import org.springframework.stereotype.Service;
+        import org.springframework.transaction.annotation.Transactional;
 
-        import javax.persistence.Id;
+
         import java.util.Optional;
 
 @Service
@@ -35,6 +36,7 @@ public class EntryServiceImp implements EntryService {
 
         entryRepository.deleteById(id);
     }
+
 
 
 
